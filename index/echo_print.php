@@ -11,9 +11,11 @@
     <body>
 
         <? 
+
         echo 'Comando eco <br/>';   
 
         echo print "Comando print <hr/>";
+        
         ?>
 
     </body>
