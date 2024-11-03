@@ -24,6 +24,10 @@
 
         // Boolean
         $fumante_sn = false; // (true = 1) or (false = 0)   
+
+        // Lógica
+
+        $idade = '30';
         
     ?>
 
