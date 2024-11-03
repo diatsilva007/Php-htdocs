@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-    <html lang="en" lang="pt-br">
-    <head>
+<html lang="en" lang="pt-br">
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Php - Variáveis</title>
+<head>
 
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Php - Variáveis</title>
 
-    <body>
+</head>
 
-        <!-- Comentário html -->
+<body>
 
-        <? 
+    <?php
 
-        // Comentário de uma linha
-        echo 'Comando eco <br/>';   
+        // String
+        $nome = 'Diogo Ataide';
 
-        # Comentário de uma linha
-        echo print "Comando print <hr/>";
+        // Int
+        $idade = 29;
 
-        /* Comentário de múltiplas linhas
-        echo 'Comando eco <br/>';
-        echo 'Comando eco <br/>';
-        echo 'Comando eco <br/>';
-        Este tipo de comentário, permite que várias linhas
-        sejam comentadas ao mesmo tempo
-        */
+        // Float
+        $peso = 99.9; 
+
+        // Boolean
+        $fumante_sn = false; // (true = 1) or (false = 0)   
         
-        ?>
+    ?>
 
-    </body>
+    <h1>Ficha cadastral</h1> <br>
+    <p>Nome: <?= $nome ?></p>
+    <p>Idade: <?= $idade ?></p>
+    <p>Peso: <?= $peso ?></p>
+    <p>Fumante: <?= $fumante_sn ?></p>
 
-    </html>
+
+</body>
+
+</html>
