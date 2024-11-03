@@ -27,7 +27,7 @@
     // Aspas duplas
     echo '<br /> <br />';
 
-    echo "Olá $nome, vi que sua  cor preferida é $cor, estou vendo também que você possui $idade anos e que gosta de $atividade_preferida."
+    echo "Olá $nome, vi que sua  cor preferida é $cor, estou vendo também que você possui $idade anos e que gosta de $atividade_preferida." // Aspas duplas converte os valores das variáveis para o texto descrito
 
     ?>
 
