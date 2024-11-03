@@ -20,7 +20,7 @@
     $idade = 30;
     $atividade_preferida = 'jogar video-game';
 
-    // Concatenando operador
+    // Concatenando operadores
 
     echo 'Olá ' . $nome . ', vi que sua  cor preferida é ' . $cor . ', estou vendo também que você possui ' . $idade . ' anos e que gosta de  ' . $atividade_preferida . '. ';
 
