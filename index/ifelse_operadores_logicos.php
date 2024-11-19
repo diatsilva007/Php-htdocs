@@ -33,7 +33,7 @@
     //! -> inverte o resultado retornado pela expressão.
 
     //() estabelecer precedência
-    // (v e v) = v ou f
+    // (v e v) = v ou f = v
     if ((22  == 22 && 3 == 3) || 5 != 5) {
         echo 'Verdadeiro'; //true
     } else {
