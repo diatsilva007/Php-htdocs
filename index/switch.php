@@ -13,18 +13,29 @@
 
     <?php
 
-        switch (2 -2) {
-            case 'value':
-                # code...
-                break;
+    $parametro = false;
 
-            default:
-                # code...
-                break;
-            }
+    // Exemplo de uso de switch
+    switch ($parametro) {
+        case 1:
+            echo 'Entrou no case 1';
+            break;
+
+        case 'abc':
+            echo 'Entrou no case 2';
+            break;
+
+        case false:
+            echo 'Entrou no case false';
+            break;
+
+        default: // Se nenhum parâmetro dos cases forem executados cairá no break do default
+            echo 'Entrou no default';
+            break;
+    }
 
     ?>
 
 </body>
 
-</html>
+</html> 
