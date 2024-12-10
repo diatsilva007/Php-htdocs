@@ -26,7 +26,7 @@
     echo "<br>";
     echo "A divisão entre $num1 e $num2 é: " . ($num1 / $num2);
     echo "<br>";
-    echo "O resto da divisão entre $num1 e $num2 é: ". ($num1 % $num2);
+    echo "O resto da divisão entre $num1 e $num2 é: " . ($num1 % $num2);
 
     ?>
 
