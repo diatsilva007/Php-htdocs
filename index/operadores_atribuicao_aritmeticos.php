@@ -15,6 +15,16 @@
 
     // Operadores de atribuição aritméticos
 
+    // =
+    // +, -, *, /, %
+
+    $x = 10;
+    $y = 8;
+
+    $x %= $y;
+
+    echo $x; 
+
     ?>
 
 </body>
