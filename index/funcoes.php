@@ -13,12 +13,24 @@
 
     <?php
 
-        function exibirBoasVindas() {
-            echo "Seja bem-vindo ao curso de PHP! <br/>";
-        }
+    // Função void (sem retorno)
+    function exibirBoasVindas()
+    {
+        echo "Seja bem-vindo ao curso de PHP! <br/>";
+    }
 
-        exibirBoasVindas();
+    exibirBoasVindas();
 
+    // Função com retorno
+    function calcularAreaTerreno($largura, $comprimento)
+    {
+        $area = $largura * $comprimento;
+        return $area;
+    }
+
+    $resultado = calcularAreaTerreno(10, 20);
+    echo $resultado;
+    
     ?>
 
 </body>
