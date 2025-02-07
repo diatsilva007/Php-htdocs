@@ -13,16 +13,16 @@
 
     <?php
 
-        // Funções matemáticas
+    // Funções matemáticas
 
-        $num = 7.5;
+    $num = 7.5;
 
-        //echo ceil($num) // Arredonda para cima
-        //echo floor($num) // Arredonda para baixo
-        //echo round($num) // Arredonda com base na fração
-        //echo rand(10, 20); // Gera um valor aleatório 0 até randmax
-        //echo '<br/>' .getrandmax()
-        echo sqrt(9) // Retona a raiz quadrada
+    //echo ceil($num) // Arredonda para cima
+    //echo floor($num) // Arredonda para baixo
+    //echo round($num) // Arredonda com base na fração
+    //echo rand(10, 20); // Gera um valor aleatório 0 até randmax
+    //echo '<br/>' .getrandmax()
+    echo sqrt(9) // Retona a raiz quadrada
 
     ?>
 
