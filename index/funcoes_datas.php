@@ -57,6 +57,7 @@
     $segundos = $diferenca_timestamp; // cálculo de segundos
     echo '<br/>'; // quebra de linha
     echo 'A diferença em segundos é: ' . $segundos; // exibe a diferença em segundos
+    
 
     ?>
 
