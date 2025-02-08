@@ -58,7 +58,6 @@
     echo '<br/>'; // quebra de linha
     echo 'A diferença em segundos é: ' . $segundos; // exibe a diferença em segundos
     
-
     ?>
 
 </body>
