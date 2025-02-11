@@ -23,7 +23,7 @@
     echo '</pre>';
 
     //$existe = in_array('Uva', $lista_frutas);
-    $existe = array_search('Uva', $lista_frutas);
+    $existe = array_search('Laranja', $lista_frutas);
     //null
 
     if ($existe != null) { //true / false
@@ -31,6 +31,19 @@
     } else {
         echo 'Não, o valor pesquisado não existe no array.';
     }
+
+    echo '<hr>';
+
+    $listas_coisas = [
+        'frutas' => $lista_frutas,
+        'pessoas' => [1 => 'Diogo', 2 => 'José', 3 => 'Solange']
+    ];
+
+    echo '<pre>';
+    print_r($listas_coisas);
+    echo '</pre>';
+
+    echo in_array('Uva', $listas_coisas['frutas']);
 
     ?>
 
