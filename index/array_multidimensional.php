@@ -13,7 +13,14 @@
 
     <?php
 
-        
+        //$listas_coisas = array();
+        $listas_coisas = [];
+
+        $listas_coisas['frutas'] = array();
+
+        echo '<pre>';
+        print_r($listas_coisas);
+        echo '</pre>';
 
     ?>
 
