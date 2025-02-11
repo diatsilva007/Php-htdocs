@@ -88,12 +88,22 @@
     echo '</pre>';
     */
 
+    // explode
+    /*
     $string = '11/02/2025'; //string
     $array_data = explode('/', $string); //divide a string em um array
     echo '<pre>';
     echo $string;
     print_r($array_data);
     echo $array_data[2] . '-' . $array_data[1] . '-' . $array_data[0]; //inverte a data
+    echo '</pre>';
+    */
+
+    // implode
+    $array = ['a', 'b', 'x', 'y']; //array
+    $string_data = implode(',', $array); //junta os elementos do array em uma string
+    echo '<pre>';
+    echo $string_data;
     echo '</pre>';
 
     ?>
