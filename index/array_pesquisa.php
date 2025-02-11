@@ -43,7 +43,7 @@
     print_r($listas_coisas);
     echo '</pre>';
 
-    echo in_array('Uva', $listas_coisas['frutas']);
+    echo in_array('Diogo', $listas_coisas['pessoas']);
 
     ?>
 
