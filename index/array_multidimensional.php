@@ -13,21 +13,21 @@
 
     <?php
 
-        //$listas_coisas = array();
-        $listas_coisas = [];
+    //$listas_coisas = array();
+    $listas_coisas = [];
 
-        $listas_coisas['frutas'] = array(1 =>'Banana', 2 => 'Maçã', 3 => 'Morango', 4 => 'Uva');
-        $listas_coisas['pessoas'] = array(1 => 'Diogo', 2 => 'José', 3 => 'Solange');
+    $listas_coisas['frutas'] = array(1 => 'Banana', 2 => 'Maçã', 3 => 'Morango', 4 => 'Uva');
+    $listas_coisas['pessoas'] = array(1 => 'Diogo', 2 => 'José', 3 => 'Solange');
 
-        echo '<pre>';
-        print_r($listas_coisas);
-        echo '</pre>';
+    echo '<pre>';
+    print_r($listas_coisas);
+    echo '</pre>';
 
-        echo '<hr>';
-        
-        echo $listas_coisas['frutas'][4]; //retorna Uva
-        echo '<br>';
-        echo $listas_coisas['pessoas'][1]; //retorna Diogo
+    echo '<hr>';
+
+    echo $listas_coisas['frutas'][4]; //retorna Uva
+    echo '<br>';
+    echo $listas_coisas['pessoas'][1]; //retorna Diogo
 
     ?>
 
