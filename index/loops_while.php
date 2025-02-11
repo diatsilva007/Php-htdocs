@@ -13,7 +13,27 @@
 
     <?php
 
-    // Loop while
+    $num = 1;
+    // operadores de comparação / lógicos   
+    echo '-- Início do loop -- <br/>';
+
+    // operador de incremento / decremento
+    while ($num < 10) {
+
+        $num += 1; // critério de parada
+
+        if ($num == 2 || $num == 6) {
+            continue;
+        }
+        echo "$num <br/>";
+
+        /*
+        if ($num > 100) {
+            break; // interrompe o loop
+        }
+        */
+    }
+    echo '-- Fim do loop -- <br/>'
 
     ?>
 
