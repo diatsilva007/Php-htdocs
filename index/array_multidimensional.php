@@ -23,6 +23,12 @@
         print_r($listas_coisas);
         echo '</pre>';
 
+        echo '<hr>';
+        
+        echo $listas_coisas['frutas'][4]; //retorna Uva
+        echo '<br>';
+        echo $listas_coisas['pessoas'][1]; //retorna Diogo
+
     ?>
 
 </body>
