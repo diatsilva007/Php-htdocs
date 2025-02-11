@@ -79,11 +79,21 @@
     */
 
     // array_merge
+    /*
     $array = ['Notebook', 'Teclado', 'Mouse', 'HD Externo']; //array simples
     $array2 = ['Monitor', 'Cadeira', 'Roteador']; //array simples
     $array_merge = array_merge($array, $array2); //junta os arrays
     echo '<pre>';
     print_r($array_merge);
+    echo '</pre>';
+    */
+
+    $string = '11/02/2025'; //string
+    $array_data = explode('/', $string); //divide a string em um array
+    echo '<pre>';
+    echo $string;
+    print_r($array_data);
+    echo $array_data[2] . '-' . $array_data[1] . '-' . $array_data[0]; //inverte a data
     echo '</pre>';
 
     ?>
