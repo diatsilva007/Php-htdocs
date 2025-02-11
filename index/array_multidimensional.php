@@ -16,7 +16,8 @@
         //$listas_coisas = array();
         $listas_coisas = [];
 
-        $listas_coisas['frutas'] = array();
+        $listas_coisas['frutas'] = array(1 =>'Banana', 2 => 'Maçã', 3 => 'Morango', 4 => 'Uva');
+        $listas_coisas['pessoas'] = array(1 => 'Diogo', 2 => 'José', 3 => 'Solange');
 
         echo '<pre>';
         print_r($listas_coisas);
