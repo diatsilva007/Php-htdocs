@@ -15,14 +15,23 @@
 
     // Loops na prática 2    
 
-    $funcionarios = array('Diogo', 'José', 'Solange');
+    $funcionarios = array(
+        array('nome' => 'Diogo', 'salário' => 20000, 'data_nascimento' => '22/11/1993'),
+        array('nome' => 'José', 'salário' => 5000),
+        array('nome' => 'Solange', 'salário' => 8000)
+    );
 
     echo '<pre>';
     print_r($funcionarios);
     echo '</pre>';
 
-    foreach ($funcionarios as $funcionario) {
-        echo $funcionario . '<br>';
+
+    foreach ($funcionarios as $idx => $funcionario) {
+        foreach ($funcionario as $idx2 => $valor) {
+            echo "$idx2 - $valor <br />";
+        }
+
+        echo '<hr />';
     }
 
     ?>
