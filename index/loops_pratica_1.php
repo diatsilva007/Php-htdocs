@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Php - Loops prática</title>
+    <title>Php - Loops na prática</title>
 
 </head>
 
