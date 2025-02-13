@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Php - Loops prática</title>
+    <title>Php - Loops foreach</title>
 
 </head>
 
@@ -13,55 +13,21 @@
 
     <?php
 
-    // Loops na prática
-    $registros = array(
-        array('titulo' => 'Título notícia 1', 'conteudo' => 'Conteúdo notícia 1'),
-        array('titulo' => 'Título notícia 2', 'conteudo' => 'Conteúdo notícia 2'),
-        array('titulo' => 'Título notícia 3', 'conteudo' => 'Conteúdo notícia 3'),
-        array('titulo' => 'Título notícia 4', 'conteudo' => 'Conteúdo notícia 4')
-    );
+    // Loops foreach
+    $items = array('sofá', 'mesa', 'cadeira', 'fogão', 'geladeira');
 
     echo '<pre>';
-    print_r($registros);
+    print_r($items);
     echo '</pre>';
 
-    echo '<br /><br /><br />';
+    foreach ($items as $item) {
+        echo "$item";
 
-    $idx = 0;
+        if ($item == 'mesa') {
+            echo ' (*Compre uma mesa e ganhe 25% de desconto na compra de 4 cadeiras).';
+        }
 
-    echo 'O array possui: ' . count($registros) . ' registros ';
-    echo '<br />';
-
-    /*
-    // Loop while
-    while ($idx < count($registros)) {
-
-        echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
-        echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
-        echo '<hr/>';
-
-        $idx++;
-    }
-    */
-
-    /*
-    // Loop  do..while
-    do {
-        echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
-        echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
-
-        echo '<hr/>';
-
-        $idx++; 
-    } while ($idx < count($registros));
-     */
-
-    // Loop for
-    for ($idx = 0; $idx < count($registros); $idx++) {
-        echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
-        echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
-
-        echo '<hr/>';
+        echo '<br>';
     }
 
     ?>
