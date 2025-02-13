@@ -20,10 +20,17 @@
         array('titulo' => 'Título notícia 3', 'conteudo' => 'Conteúdo notícia 3')
     );
 
+    echo '<pre>';
+    print_r($registros);
+    echo '</pre>';
+
+    echo '<br /><br /><br />';
+
     $idx = 0;
     while ($idx < 3) {
 
-        echo $registros[$idx];
+        echo '<h3>' . $registros[$idx]['titulo'] . '</h3>';
+        echo '<p>' . $registros[$idx]['conteudo'] . '</p>';
         echo '<hr/>';
 
         $idx++;
