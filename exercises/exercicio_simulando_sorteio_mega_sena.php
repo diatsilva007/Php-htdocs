@@ -24,9 +24,17 @@
         }
     }
 
+    // Ordena os números para melhor legibilidade
+    sort($numeros);
+
+    // Imprime os números de forma legível
+    echo '<p>Números sorteados: ' . implode(', ', $numeros) . '</p>';
+
+    /*
     echo '<pre>';
     print_r($numeros);
     echo '</pre>';
+    */
 
     ?>
 
