@@ -24,7 +24,9 @@
         }
     }
 
+    echo '<pre>';
     print_r($numeros);
+    echo '</pre>';
 
     ?>
 
