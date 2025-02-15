@@ -1,6 +1,6 @@
 <?php
 
-    /*
+/*
     print_r($_GET);
 
     echo '<br />';
@@ -10,11 +10,10 @@
     echo $_GET['senha']
     */
 
-    print_r($_POST);
-    
-    echo '<br />';
+print_r($_POST);
 
-    echo $_POST['email'];
-    echo '<br />';
-    echo $_POST['senha']
-?>
+echo '<br />';
+
+echo $_POST['email'];
+echo '<br />';
+echo $_POST['senha']
