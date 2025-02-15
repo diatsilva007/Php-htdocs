@@ -1,6 +1,11 @@
 <?php
 
-    echo "Olá, estamos aqui. <br /> <br />";
-    echo "Está tudo funcionando conforme o esperado.";
+    print_r($_GET);
+
+    echo '<br />';
+
+    echo $_GET['email'];
+    echo '<br />';
+    echo $_GET['senha']
 
 ?>
