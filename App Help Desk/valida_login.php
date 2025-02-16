@@ -25,7 +25,7 @@ foreach ($usuarios_app as $user) {
 if ($usuario_autenticado) {
     echo 'Login realizado com sucesso!';
 } else {
-    header('Location: index.php?login=erro');
+    header('Location: index.php?login=error');
 }
 
 /*
