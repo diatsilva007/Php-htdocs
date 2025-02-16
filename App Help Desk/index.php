@@ -43,7 +43,7 @@
 
               <?php
 
-              if (isset($_GET['login']) && $_GET['login'] == 'error') { ?>
+              if (isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
 
               <div class="text-danger">
                 Usuário ou senha inválido(s)
