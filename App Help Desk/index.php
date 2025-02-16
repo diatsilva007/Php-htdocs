@@ -1,3 +1,11 @@
+<?php
+
+if (isset($_GET['login'])) {
+  echo ($_GET['login']);
+}
+
+?>
+
 <html>
 
 <head>
