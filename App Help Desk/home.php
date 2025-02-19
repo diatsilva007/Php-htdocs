@@ -5,8 +5,6 @@
     header('Location: index.php?login=erro2');
   }
 
-      
-
 ?>
 
 <html>
