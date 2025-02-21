@@ -38,7 +38,7 @@
         //métodos
         function resumirCadFunc(){
             /* this, operador de ajuste de contexto */
-            return "$this->nome possui $this->numFilhos filhos(s)";
+            return $this->__get('nome') . " possui " . $this->__get('numFilhos') . " filhos(s)";
         }
 
         function modificarNumFilhos($numFilhos){
@@ -52,10 +52,11 @@
     $y = new Funcionario();
     $y->__set('nome', 'José');
     $y->__set('numFilhos', 2);
-    // echo $y->resumirCadFunc();
-    echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . ' filho(s) ';
+    echo $y->resumirCadFunc();
+    // echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . ' filho(s) ';
     echo '<br />';
     $x = new Funcionario();
     $x->__set('nome', 'Maria');
     $x->__set('numFilhos', 0);
-    echo $x->__get('nome') . ' possui ' . $x->__get('numFilhos') . ' filho(s) ';
+    echo $x->resumirCadFunc();
+    // echo $x->__get('nome') . ' possui ' . $x->__get('numFilhos') . ' filho(s) ';
