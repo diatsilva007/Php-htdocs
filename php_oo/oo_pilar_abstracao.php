@@ -1,40 +1,54 @@
 <?php
 
-//modelo
-class Funcionario
-{
-    //atributos
-    public $nome = 'Diogo';  //public: visivel para todos
-    public $telefone = '35 99999-8888';  
-    public $numFilhos = 2;
+    //modelo
+    class Funcionario {
+        //atributos
+        public $nome = null;
+        public $telefone = null;
+        public $numFilhos = null;
 
-    //métodos
-    function resumirCadFunc()  
-    {
-        /* this, operador de ajuste de contexto */
-        return "$this->nome possui $this->numFilhos filhos(s)"; //retorna o nome e o número de filhos
+        //getters setters
+        function setNome($nome) {
+            $this->nome = $nome;
+        }
+
+        function setNumFilhos($numFilhos) {
+            $this->numFilhos = $numFilhos;
+        }
+
+        function getNome() {
+            return $this->nome;
+        }
+
+        function getNumFilhos() {
+            return $this->numFilhos;
+        }
+
+        //métodos
+        function resumirCadFunc(){
+            /* this, operador de ajuste de contexto */
+            return "$this->nome possui $this->numFilhos filhos(s)";
+        }
+
+        function modificarNumFilhos($numFilhos){
+            //afetar um atributo do objeto
+            $this->numFilhos = $numFilhos;
+            //numFilhos: variavel do objeto que pertence a class
+            //$numFilhos: variavel do método recebido por parametro
+        }
     }
 
-    function modificarNumFilhos($numFilhos)
-    {
-        //afetar um atributo do objeto
-        $this->numFilhos = $numFilhos;
-        //numFilhos: variavel do objeto que pertence a class
-        //$numFilhos: variavel do método recebido por parametro
-    }
-}
-
-$y = new Funcionario();
-echo $y->resumirCadFunc(); //para acessar atributos ou métodos, usamos o "->"
-echo '<br />';
-$y->modificarNumFilhos(3);
-echo $y->resumirCadFunc();
-echo '<hr />';
-
-$x = new Funcionario();
-echo $x->resumirCadFunc();
-echo '<br />';
-$x->modificarNumFilhos(1);
-echo $x->resumirCadFunc();
-
+    $y = new Funcionario();
+    $y->setNome('José');
+    $y->setNumFilhos(2);
+    // echo $y->resumirCadFunc();
+    echo $y->getNome() . ' possui ' . $y->getNumFilhos() . ' filho(s) ';
+    echo '<br />';
+    $x = new Funcionario();
+    $x->setNome('Maria');
+    $x->setNumFilhos(0);
+    echo $x->getNome() . ' possui ' . $x->getNumFilhos() . ' filho(s) ';
+  
+    
+  
 ?>
