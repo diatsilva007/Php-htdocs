@@ -39,16 +39,14 @@
     }
 
     $y = new Funcionario();
-    $y->setNome('José');
+    $y->setNome('Solange');
     $y->setNumFilhos(2);
     // echo $y->resumirCadFunc();
     echo $y->getNome() . ' possui ' . $y->getNumFilhos() . ' filho(s) ';
     echo '<br />';
     $x = new Funcionario();
-    $x->setNome('Maria');
+    $x->setNome('Diogo');
     $x->setNumFilhos(0);
     echo $x->getNome() . ' possui ' . $x->getNumFilhos() . ' filho(s) ';
-  
-    
   
 ?>
