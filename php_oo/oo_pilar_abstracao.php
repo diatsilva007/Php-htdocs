@@ -6,9 +6,20 @@
         public $nome = null;
         public $telefone = null;
         public $numFilhos = null;
+        public $cargo = null;
+        public $salario = null;
 
-        //getters setters
-        function setNome($nome) {
+
+        //getters setters(overloading / sobrecarga)
+        function __set($atributo, $valor){
+            $this->$atributo = $valor;
+        }
+
+        function __get($atributo) {
+            return $this->$atributo;
+        }
+
+        /* function setNome($nome) {
             $this->nome = $nome;
         }
 
@@ -22,7 +33,7 @@
 
         function getNumFilhos() {
             return $this->numFilhos;
-        }
+        } */
 
         //métodos
         function resumirCadFunc(){
@@ -39,14 +50,12 @@
     }
 
     $y = new Funcionario();
-    $y->setNome('Solange');
-    $y->setNumFilhos(2);
+    $y->__set('nome', 'José');
+    $y->__set('numFilhos', 2);
     // echo $y->resumirCadFunc();
-    echo $y->getNome() . ' possui ' . $y->getNumFilhos() . ' filho(s) ';
+    echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . ' filho(s) ';
     echo '<br />';
     $x = new Funcionario();
-    $x->setNome('Diogo');
-    $x->setNumFilhos(0);
-    echo $x->getNome() . ' possui ' . $x->getNumFilhos() . ' filho(s) ';
-  
-?>
+    $x->__set('nome', 'Maria');
+    $x->__set('numFilhos', 0);
+    echo $x->__get('nome') . ' possui ' . $x->__get('numFilhos') . ' filho(s) ';
