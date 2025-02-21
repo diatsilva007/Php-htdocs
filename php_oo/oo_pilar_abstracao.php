@@ -4,15 +4,15 @@
 class Funcionario
 {
     //atributos
-    public $nome = 'Diogo';
-    public $telefone = '35 99999-8888';
+    public $nome = 'Diogo';  //public: visivel para todos
+    public $telefone = '35 99999-8888';  
     public $numFilhos = 2;
 
     //métodos
-    function resumirCadFunc()
+    function resumirCadFunc()  
     {
         /* this, operador de ajuste de contexto */
-        return "$this->nome possui $this->numFilhos filhos(s)";
+        return "$this->nome possui $this->numFilhos filhos(s)"; //retorna o nome e o número de filhos
     }
 
     function modificarNumFilhos($numFilhos)
