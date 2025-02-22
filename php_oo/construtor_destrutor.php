@@ -22,11 +22,12 @@
 		}
 	}
 
-	$pessoa = new Pessoa('Diogo');
+	$pessoa = new Pessoa('Jorge');
 	echo '<br />Nome: ' . $pessoa->__get('nome');
 	echo '<br />' . $pessoa->correr();
 
 	echo '<br />';
 	//unset($pessoa); //proposital
+
 
 ?>
