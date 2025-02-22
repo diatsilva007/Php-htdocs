@@ -67,3 +67,5 @@
 	$moto->acelerar();
 	echo '<br />';
 	$moto->freiar();
+
+?>
