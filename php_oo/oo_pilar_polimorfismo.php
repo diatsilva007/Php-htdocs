@@ -1,79 +1,67 @@
 <?php
 
 
-class Carro extends Veiculo
-{
-	public $teto_solar = true;
+	class Carro extends Veiculo {
+		public $teto_solar = true;
 
-	function __construct($placa, $cor)
-	{
-		$this->placa = $placa;
-		$this->cor = $cor;
+		function __construct($placa, $cor) {
+			$this->placa = $placa;
+			$this->cor = $cor;
+		}
+
+		function abrirTetoSolar() {
+			echo 'Abrir teto solar';
+		}
+
+		function alterarPosicaoVolante() {
+			echo 'Alterar posição volante';
+		}
 	}
 
-	function abrirTetoSolar()
-	{
-		echo 'Abrir teto solar';
+	class Moto extends Veiculo {
+		public $contraPesoGuidao = true;
+
+		function __construct($placa, $cor) {
+			$this->placa = $placa;
+			$this->cor = $cor;
+		}
+
+		function empinar() {
+			echo 'Empinar';
+		}
+
+		function trocarMarcha() {
+			echo 'Desengatar embreagem com a mão e engatar marcha com o pé';
+		}
 	}
 
-	function alterarPosicaoVolante()
-	{
-		echo 'Alterar posição volante';
-	}
-}
+	class Veiculo {
+		public $placa = null;
+		public $cor = null;
 
-class Moto extends Veiculo
-{
-	public $contraPesoGuidao = true;
+		function acelerar() {
+			echo 'Acelerar';
+		}
 
-	function __construct($placa, $cor)
-	{
-		$this->placa = $placa;
-		$this->cor = $cor;
-	}
+		function freiar() {
+			echo 'Freiar';
+		}
 
-	function empinar()
-	{
-		echo 'Empinar';
+		function trocarMarcha() {
+			echo 'Desengatar embreagem com o pé e engatar marcha com a mão';
+		}
 	}
 
-	function trocarMarcha()
-	{
-		echo 'Desengatar embreagem com a mão e engatar marcha com o pé';
-	}
-}
+	class Caminhao extends Veiculo {}
 
-class Veiculo
-{
-	public $placa = null;
-	public $cor = null;
+	$carro = new Carro('ABC1234', 'Branco');
+	$moto = new Moto('DEF1122', 'Preto');
+	$caminhao = new Caminhao();
 
-	function acelerar()
-	{
-		echo 'Acelerar';
-	}
+	$carro->trocarMarcha();
+	echo '<br />';
+	$moto->trocarMarcha();
+	echo '<br />';
+	$caminhao->trocarMarcha();
 
-	function freiar()
-	{
-		echo 'Freiar';
-	}
-
-	function trocarMarcha()
-	{
-		echo 'Desengatar embreagem com o pé e engatar marcha com a mão';
-	}
-}
-
-class Caminhao extends Veiculo {}
-
-$carro = new Carro('ABC1234', 'Branco');
-$moto = new Moto('DEF1122', 'Preto');
-$caminhao = new Caminhao();
-
-$carro->trocarMarcha();
-echo '<br />';
-$moto->trocarMarcha();
-echo '<br />';
-$caminhao->trocarMarcha();
-
-?>
+	?>
