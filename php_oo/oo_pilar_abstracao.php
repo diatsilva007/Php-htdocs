@@ -60,3 +60,5 @@
     $x->__set('numFilhos', 0);
     echo $x->resumirCadFunc();
     // echo $x->__get('nome') . ' possui ' . $x->__get('numFilhos') . ' filho(s) ';
+
+?>
