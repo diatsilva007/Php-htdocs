@@ -22,7 +22,7 @@
 		}
 	}
 
-	$pessoa = new Pessoa('Jorge');
+	$pessoa = new Pessoa('Diogo');
 	echo '<br />Nome: ' . $pessoa->__get('nome');
 	echo '<br />' . $pessoa->correr();
 
