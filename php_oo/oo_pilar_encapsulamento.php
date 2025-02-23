@@ -133,7 +133,7 @@ echo '</pre>';
     print_r($filho);
     echo '</pre>'; */
 
-$fiho->executarMania();
+$filho->x();
 echo '<br/>';
 $filho->x();
 
