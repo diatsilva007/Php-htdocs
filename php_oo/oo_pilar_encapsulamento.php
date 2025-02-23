@@ -133,7 +133,7 @@ echo '</pre>';
     print_r($filho);
     echo '</pre>'; */
 
-$filho->x();
+$filho->executarAcao();
 echo '<br/>';
 $filho->x();
 
