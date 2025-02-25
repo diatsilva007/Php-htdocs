@@ -64,4 +64,4 @@
 	echo '<br />';
 	$caminhao->trocarMarcha();
 
-	?>
+	
