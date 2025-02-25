@@ -20,13 +20,13 @@ class MinhaExceptionCustomizada extends Exception
 
 try {
 
-	throw new Error('Esse é um erro de teste');
+	throw new MinhaExceptionCustomizada('Esse é um erro de teste');
 
 	//Error (php)
 	//Exception (programadores)
 	//Customizadas (programadores)
 
-} catch (Error $e) {
+} catch (MinhaExceptionCustomizada $e) {
 	$e->exibirMensagemErroCustomizada();
 }
 
