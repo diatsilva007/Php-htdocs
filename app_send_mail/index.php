@@ -8,6 +8,8 @@
 
 	<link rel="icon" href="logo.png" type="image/png">
 
+	<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -27,17 +29,17 @@
 					<form>
 						<div class="form-group">
 							<label for="para">Para</label>
-							<input type="text" class="form-control" id="para" placeholder="joao@dominio.com.br">
+							<input type="text" class="form-control" id="para" placeholder="joao@dominio.com.br" required>
 						</div>
 
 						<div class="form-group">
 							<label for="assunto">Assunto</label>
-							<input type="text" class="form-control" id="assunto" placeholder="Assundo do e-mail">
+							<input type="text" class="form-control" id="assunto" placeholder="Assundo do e-mail" required>
 						</div>
 
 						<div class="form-group">
 							<label for="mensagem">Mensagem</label>
-							<textarea class="form-control" id="mensagem"></textarea>
+							<textarea class="form-control" id="mensagem" required></textarea>
 						</div>
 
 						<button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
