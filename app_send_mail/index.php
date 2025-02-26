@@ -8,6 +8,8 @@
 
 	<link rel="stylesheet" href="style.css">
 
+	<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
 </head>
 
 <body>
