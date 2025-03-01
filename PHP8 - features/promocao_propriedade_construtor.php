@@ -18,10 +18,7 @@ class Produto
 
 class Produto
 {
-    public function __construct(
-        public string $nome = "",
-        public float $valor = 0,
-    ) {}
+    public function __construct(public string $nome = "", public float $valor = 0) {}
 }
 
 $produto = new Produto('Smartphone', 1500);
