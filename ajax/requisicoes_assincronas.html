@@ -18,28 +18,8 @@
 				if(!document.getElementById('loading')) {
 					let imgLoading = document.createElement('img')
 					imgLoading.id = 'loading'
-					imgLoading.src = './img/loading.gif'
-					imgLoading.alt = 'Carregando...'
-					imgLoading.style.width = '100px'
-					imgLoading.style.height = '100px'
-					imgLoading.style.marginTop = '20px'
-					imgLoading.style.marginBottom = '20px'
-					imgLoading.style.display = 'block'
-					imgLoading.style.marginLeft = 'auto'
-					imgLoading.style.marginRight = 'auto'
-					imgLoading.style.position = 'absolute'
-					imgLoading.style.top = '50%'
-					imgLoading.style.left = '50%'
-					imgLoading.style.transform = 'translate(-50%, -50%)'
-					imgLoading.style.zIndex = '9999'
-					imgLoading.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
-					imgLoading.style.borderRadius = '10px'
-					imgLoading.style.padding = '10px'
-					imgLoading.style.color = 'black'
-					imgLoading.style.fontSize = '20px'
-					imgLoading.style.fontWeight = 'bold'
-					imgLoading.style.textAlign = 'center'
-					imgLoading.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)'
+					imgLoading.src = 'loading.gif'
+					imgLoading.className = 'rounded mx-auto d-block'
 
 					document.getElementById('conteudo').appendChild(imgLoading)
 				}
