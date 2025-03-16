@@ -23,7 +23,7 @@ try {
     //         insert into tb_usuarios(
     //             nome, email, senha 
     //         ) values (
-    //             "Jorge Sant Ana", "jorge@teste.com.br", "123456"
+    //             "Jorge Sant Ana", "diogo@teste.com.br", "123456"
     //         )
     // ';
     $query = '
