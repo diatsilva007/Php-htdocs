@@ -8,11 +8,11 @@ if(!empty($_POST['usuario']) && !empty($_POST['senha'])) {
 
     try {
         $conexao = new PDO($dsn, $usuario, $senha);
-        // $query = "insert into tb_usuarios(nome, email, senha)values('Jorge Sant Ana', 'jorge@teste.com.br', '1234')";
+        // $query = "insert into tb_usuarios(nome, email, senha)values('Diogo Ataide Silva', 'diogo@teste.com.br', '1234')";
         //$conexao->query($query);
-        // $query = "insert into tb_usuarios(nome, email, senha)values('Jamilton Damasceno', 'jamilton@teste.com.br', '1234')";
+        // $query = "insert into tb_usuarios(nome, email, senha)values('José dos Passos Silva', 'jpsilva@teste.com.br', '1234')";
         //$conexao->query($query);
-        // $query = "insert into tb_usuarios(nome, email, senha)values('Fernanda Silva', 'fernanda@teste.com.br', '1234')";
+        // $query = "insert into tb_usuarios(nome, email, senha)values('Solange Aparecida Nogueira Silva', 'solnogsilva@teste.com.br', '1234')";
         //$conexao->query($query);
 
         $query = "select * from tb_usuarios where ";
